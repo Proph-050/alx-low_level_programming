@@ -1,6 +1,6 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
  * main - Entry point of the program
@@ -13,9 +13,8 @@ int main(void)
 
 	srand(time(0)); /* Initialize random number generator with current time */
 
-	n = rand(); /* Generate a random number and assign it to variable n */
-
-	printf("The number %d is ", n);
+	n = rand() - RAND_MAX / 2;
+	/* code goes here */
 
 	if (n > 0)
 	{

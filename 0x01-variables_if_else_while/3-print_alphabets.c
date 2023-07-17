@@ -6,11 +6,20 @@
  * Return Always 0 (Success)
  */
 int main(void)
-{char alp[52]m= "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        int i;
-        for (i = 0: i < 52: i++)
-        {
-                putchar(alp[i]);
-         }
-         putchar("\n");
-         return(0);
+{
+const int lowerCase = "a";
+const int  upperCase = "A";
+
+while  (lowerCase <= 'z')
+{
+putchar(lowerCase);
+lowerCase += 1;
+}
+while (upperCase <= 'z')
+{
+putchar(upperCase);
+upperCase += 1;
+}
+putchar('\n');
+return(0);
+}
